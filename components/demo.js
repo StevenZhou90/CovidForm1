@@ -10,10 +10,10 @@ const schema = yup.object({
     tribalAffiliation: yup.string().required('This is a required field'),
     phoneNumber: yup.string().required('This is a required field'),
     okToText:  yup.string().required('This is a required field').email('Not a valid email'),
-    okEmail:  yup.string().required('This is a required field').email('Not a valid email'),
-    race:  yup.string().required('This is a required field').email('Not a valid email'),
-    bestWayToReach:  yup.string().required('This is a required field').email('Not a valid email'),
-    dateOfInterView:  yup.string().required('This is a required field').email('Not a valid email'),
+    okEmail:  yup.string().required('This is a required field'),
+    race:  yup.string().required('This is a required field'),
+    bestWayToReach:  yup.string().required('This is a required field'),
+    dateOfInterView:  yup.string().required('This is a required field'),
 
 })
 
