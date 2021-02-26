@@ -14,15 +14,29 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
+
+    <NavigationContainer style={styles.nav}>
       <Stack.Navigator>
-        <Stack.Screen name="Intro" component={Intro} />
-        <Stack.Screen name="Demo" component={Demo} />
-        <Stack.Screen name="Health" component={Health} />
-        <Stack.Screen name="Risk" component={Risk} />
+        <Stack.Screen name="Intro" component={Intro} options={{ headerStyle: {backgroundColor: '#3d4df5'} }}/>
+        <Stack.Screen name="Demo" component={Demo} options={{ headerStyle: {backgroundColor: '#3d4df5'} }}/>
+        <Stack.Screen name="Health" component={Health} options={{ headerStyle: {backgroundColor: '#3d4df5'} }}/>
+        <Stack.Screen name="Risk" component={Risk} options={{ headerStyle: {backgroundColor: '#3d4df5'} }}/>
         <Stack.Screen name="ContactForm" component={ContactFormApp} />
       </Stack.Navigator>
     </NavigationContainer>
+
+    
   );
 }
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  nav: {
+    backgroundColor: '#013A63',
+  }
+  
+});
 
